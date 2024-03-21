@@ -1,0 +1,184 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Enfield</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  
+  background-image: url("https://images.pexels.com/photos/4297509/pexels-photo-4297509.jpeg?cs=srgb&dl=pexels-prithivirajan-c-4297509.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Initially hidden */
+  width: 200px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+#side-menu.active {
+  left: 0; /* Slide menu into view */
+}
+
+#side-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+#side-menu li a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+#side-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #ddd;
+}
+
+.models {
+  display: flex; /* Arrange model sections side-by-side */
+  flex-wrap: wrap; /* Allow models to wrap to next line if needed */
+  margin-top: 2rem;
+}
+
+/* Add styles for individual model sections here */
+.model {
+  width: calc(33% - 1.5rem); /* Adjust width based on number of models per row */
+  margin: 0.75rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.model img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.model h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.model p {
+  font-size: 0.9rem;
+}
+
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Royal Enfield</h1>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+  </header>
+
+  <nav id="side-menu">
+    <ul>
+ <li><a href="https://store.royalenfield.com/en/customer/account/login/">LOGIN</a></li>
+  <li><a href="C:\Users\HP\OneDrive\Desktop\tarun1.html">Home</a></li>
+   <li>
+    <a href="#">Bikes</a>
+    <ul>
+        <li><a href='https://www.royalenfield.com/in/en/motorcycles/classic-350/'>Classic</a></li>
+        <li><a href="https://www.royalenfield.com/in/en/motorcycles/classic-350/new-campaign/">Interceptor</a></li>
+        <li><a href="https://www.royalenfield.com/in/en/motorcycles/classic-350/new-campaign/">Himalayan</a></li>
+    </ul>
+</li>
+
+      <li><a href="https://www.royalenfield.com/in/en/gma/">Accessories</a></li>
+      <li><a href="https://store.royalenfield.com/en/about-us">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    <li><a href="https://www.royalenfield.com/in/en/forms/book-a-test-ride/">Book a ride</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2 font>Ride the Legend</h2>
+      <p>Experience the timeless thrill of Royal Enfield motorcycles.</p>
+        
+    </section>
+
+   
+  </main>
+
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+    const sideMenu = document.getElementById('side-menu');
+    
+    menuToggle.addEventListener('click', function() {
+      sideMenu.classList.toggle('active');
+    });
+    </script>
+</body>
+</html>
